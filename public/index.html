@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Fælles — a Danish cooperative of software, data and machine learning engineers building small tools together.">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf9f6">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#12151a">
+  <title>Fælles — a Danish software cooperative</title>
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --fg: #1d1d1b;
+      --muted: #6f6d68;
+      --accent: #c8102e;
+      --card: #ffffff;
+      --border: #e6e2da;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12151a;
+        --fg: #e9e8e4;
+        --muted: #9c9a93;
+        --accent: #e5484d;
+        --card: #1a1e25;
+        --border: #282e37;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 4rem 1.5rem 6rem;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .accent {
+      color: var(--accent);
+    }
+
+    .tagline {
+      margin: 0.5rem 0 0;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .lead {
+      margin: 2rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      margin: 3rem 0 1rem;
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .card {
+      margin: 0 0 0.75rem;
+      padding: 1rem 1.25rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.6rem;
+    }
+
+    .card h3 {
+      margin: 0 0 0.25rem;
+      font-size: 1rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul.tools {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul.tools li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    ul.tools li:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Fælles<span class="accent">*</span></h1>
+      <p class="tagline">* Danish for &ldquo;in common&rdquo; &mdash; it is also how we work.</p>
+    </header>
+
+    <p class="lead">
+      We are a Danish cooperative of software, data and machine
+      learning engineers. We build small, useful tools together
+      &mdash; and we think how you build something matters as much
+      as what you build.
+    </p>
+
+    <h2>What holds us together</h2>
+
+    <div class="card">
+      <h3>Ethical engineering</h3>
+      <p>
+        We build things we can stand behind: no dark patterns, no
+        tracking we wouldn't accept ourselves, no data we wouldn't
+        hand over if asked.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Code-driven</h3>
+      <p>
+        Infrastructure, deploys, reviews &mdash; if it happens twice,
+        it becomes code. Everything we run is declared, versioned and
+        reproducible.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Work&ndash;life balance</h3>
+      <p>
+        Sane hours, sustainable pace, no hero culture. Good tools are
+        built by people who are well &mdash; this is a side-project
+        collective, and we like it that way.
+      </p>
+    </div>
+
+    <h2>Built together</h2>
+
+    <ul class="tools">
+      <li>
+        <span><strong>L&oslash;ft</strong> &mdash; a weightlifting companion</span>
+        <a href="https://loeft.faelles.eu">loeft.faelles.eu</a>
+      </li>
+      <li>
+        <span><strong>Br&aelig;t</strong> &mdash; a kanban board</span>
+        <a href="https://braet.faelles.eu">braet.faelles.eu</a>
+      </li>
+    </ul>
+
+    <footer>
+      <span>Denmark &middot; a cooperative, not a company</span>
+      <a href="https://github.com/faelles-dev">github.com/faelles-dev</a>
+    </footer>
+  </main>
+</body>
+</html>
